@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="知行合一的空间">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="[toc]  大家好，欢迎访问我的博客！ 随着年龄的增长，我越来越感受到写博客文章&#x2F;视频对于一个程序员的重要性，因为它可以帮助普通程序员提升能力，帮助优秀程序员晋升管理岗或者自主创业。 本篇内容分为下面 3 个部分：  我们为什么需要搭建个人博客？  博客平台有很多，为什么选择 github 个人博客？ 如何快速搭建美观又实用的 github 个人博客？  我为什么需要搭建个人博客？八个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fisrt_github_paper">
+<meta property="og:url" content="http://example.com/2022/04/17/fisrt-github-paper/index.html">
+<meta property="og:site_name" content="知行合一">
+<meta property="og:description" content="[toc]  大家好，欢迎访问我的博客！ 随着年龄的增长，我越来越感受到写博客文章&#x2F;视频对于一个程序员的重要性，因为它可以帮助普通程序员提升能力，帮助优秀程序员晋升管理岗或者自主创业。 本篇内容分为下面 3 个部分：  我们为什么需要搭建个人博客？  博客平台有很多，为什么选择 github 个人博客？ 如何快速搭建美观又实用的 github 个人博客？  我为什么需要搭建个人博客？八个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2022/03/31/qRGkgU.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/03/23/qln2ge.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/03/31/qRGkgU.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/01/qhnJTP.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/17/LNmaLQ.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/17/LNmRL4.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/17/LNMHNd.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/17/LNw8Fx.jpg">
+<meta property="article:published_time" content="2022-04-17T04:12:38.000Z">
+<meta property="article:modified_time" content="2022-04-17T04:15:03.267Z">
+<meta property="article:author" content="知行合一的空间">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/03/31/qRGkgU.jpg">
+  
+  
+  <title>fisrt_github_paper - 知行合一</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>知行合一</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="fisrt_github_paper">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-04-17 12:12" pubdate>
+        2022年4月17日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.7k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">fisrt_github_paper</h1>
+            
+            <div class="markdown-body">
+              <p>[toc]</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qRGkgU"><img src="https://s1.ax1x.com/2022/03/31/qRGkgU.jpg" srcset="/img/loading.gif" lazyload alt="qRGkgU.jpg"></a></p>
+<p>大家好，欢迎访问我的博客！</p>
+<p>随着年龄的增长，我越来越感受到写博客文章&#x2F;视频对于一个程序员的重要性，因为它可以帮助普通程序员提升能力，帮助优秀程序员晋升管理岗或者自主创业。</p>
+<p>本篇内容分为下面 3 个部分：</p>
+<ol>
+<li>我们为什么需要搭建个人博客？ </li>
+<li>博客平台有很多，为什么选择 github 个人博客？</li>
+<li>如何快速搭建美观又实用的 github 个人博客？</li>
+</ol>
+<h1 id="我为什么需要搭建个人博客？"><a href="#我为什么需要搭建个人博客？" class="headerlink" title="我为什么需要搭建个人博客？"></a>我为什么需要搭建个人博客？</h1><p>八个字：<strong>利人利己，长期获益</strong>。具体分为下面几点：</p>
+<ol>
+<li><p>分享 AI + AR&#x2F;VR 领域的技术知识 </p>
+<p>这里说一下我的博客与其他人博客的定位差异：<br>（1）<strong>清晰易懂</strong><br> 90% 以上的人阅读技术文章的痛点是看不懂，原因主要有两个，一是语言太晦涩，公式太多对人类不友好，二是技术文章的逻辑不清晰，对于重点一带而过，对于非重点长篇大论。<br> 针对上述痛点，我的博客的特点有两个，一是语言通俗，能说大白话的时候绝不装逼；二是重点突出，用几句话精练地概括全文的精髓，然后才是具体的展开内容；<br>（2）<strong>知行合一</strong><br> 也就是理论与实践统一。大多数博客要么只讲理论，比如 CNN 的原理，BN 的原理，但是很少给出拿来就可以用的代码；要么只讲代码，不讲背后的理论，浅尝辄止；<br>（3）<strong>布局 AR&#x2F;VR + AI</strong><br> 我的博客的定位很清晰，将 AI 与 XR 结合起来；</p>
+</li>
+<li><p>提高学习效率 </p>
+<p>学习最好的方式就是教会别人，验证你有没有真正学懂一个东西最好的办法就是看<strong>你能否给周围人讲清楚</strong>； </p>
+</li>
+<li><p>作为云上的学习笔记</p>
+<p> 好记性不如烂笔头，坚持记录，水平增长看得见；</p>
+</li>
+<li><p>打造技术影响力  </p>
+<p>阿里 P8 是绝大多数程序员的天花板，为什么？因为阿里 P8 不仅需要你的技术水平，业务成果，还有一个很重要的要求：业内具有一定的影响力。个人博客平台是打造技术影响力的一个重要途径。</p>
+</li>
+<li><p>为抖音快手B站引流 </p>
+<p>流量爆炸增长的密码中有一个关键词：网络效应，不同平台之间的相互引流是引发流量爆炸增长的一个重要因素。</p>
+</li>
+<li><p>说点虚的，人活一世得为这个世界留下点好东西 hhh</p>
+</li>
+</ol>
+<h1 id="博客平台有很多，为什么选择-github-个人博客？"><a href="#博客平台有很多，为什么选择-github-个人博客？" class="headerlink" title="博客平台有很多，为什么选择 github 个人博客？"></a>博客平台有很多，为什么选择 github 个人博客？</h1><p>没有最优方案只有最适合自己的方案，这里我对个人博客的需求包括：</p>
+<ol>
+<li>免费 </li>
+<li>稳定：目测 10 年内不易倒闭</li>
+<li>灵活：可以自定义，我自己能够决定版面布局；</li>
+<li>可复用：可以低成本地迁移到 CSDN, 知乎等其他博客平台，一次写作到处发表（write once, public everywhere!）</li>
+<li>支持版本管理：写过代码的人都知道版本管理多香</li>
+</ol>
+<p>出于上述的需求，博客选型定为：github 个人博客</p>
+<h1 id="如何搭建-github-个人博客？"><a href="#如何搭建-github-个人博客？" class="headerlink" title="如何搭建 github 个人博客？"></a>如何搭建 github 个人博客？</h1><p>这部分内容比较多，分为以下部分：</p>
+<ol>
+<li>入门：五分钟快速搞定 github 个人博客；</li>
+<li>进阶：提升博客颜值，提高用户体验</li>
+</ol>
+<h2 id="入门：十分钟快速搞定-github-个人博客"><a href="#入门：十分钟快速搞定-github-个人博客" class="headerlink" title="入门：十分钟快速搞定 github 个人博客"></a>入门：十分钟快速搞定 github 个人博客</h2><p>四步步骤：</p>
+<ol>
+<li>github 新建一个博客仓库；</li>
+<li>安装 Git, Node.js, Hexo;</li>
+<li>初始化博客项目；</li>
+<li>发布博客；<br>一步一步来做。</li>
+</ol>
+<h3 id="github-新建一个博客仓库"><a href="#github-新建一个博客仓库" class="headerlink" title="github 新建一个博客仓库"></a>github 新建一个博客仓库</h3><p>主要步骤：</p>
+<ol>
+<li>登录我们的 Github 账号；</li>
+<li>创建一个新仓库；</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qln2ge"><img src="https://s1.ax1x.com/2022/03/23/qln2ge.jpg" srcset="/img/loading.gif" lazyload alt="qln2ge.jpg"></a></p>
+<p>注意点：后缀一定是 .github.io, 固定写法，具体原因不知道。<br>八卦：关于起名，可以选择一个你喜欢的人物形象或者物体形象，我喜欢猫和老鼠里面的猫 Tom，所以叫做 FancyTom:<br><img src="https://s1.ax1x.com/2022/03/31/qRGkgU.jpg" srcset="/img/loading.gif" lazyload alt="qRGkgU.jpg"></p>
+<h3 id="安装并配置-Git-Node-js-Hexo"><a href="#安装并配置-Git-Node-js-Hexo" class="headerlink" title="安装并配置 Git, Node.js, Hexo"></a>安装并配置 Git, Node.js, Hexo</h3><h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><p>程序员常用工具，安装配置教程很多，略过；</p>
+<h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a><br>安装完之后在控制台验证一下是否成功：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">node -v<br><span class="hljs-meta prompt_"># </span><span class="language-bash">应该显示版本，例如</span><br>v16.14.2<br></code></pre></td></tr></table></figure>
+
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p>Hexo 是一个快速、简洁且高效的博客开发框架：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qhnJTP"><img src="https://s1.ax1x.com/2022/04/01/qhnJTP.jpg" srcset="/img/loading.gif" lazyload alt="qhnJTP.jpg"></a></p>
+<p>安装很简单，在控制台中输入：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+<p>验证是否安装成功，并查看版本：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo -v<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">应该输出类似于</span> <br>hexo-cli: 4.3.0<br>os: win32 10.0.19043<br>node: 16.14.2<br>v8: 9.4.146.24-node.20<br>uv: 1.43.0<br>zlib: 1.2.11<br>brotli: 1.0.9<br>ares: 1.18.1<br>modules: 93<br>nghttp2: 1.45.1<br>napi: 8<br>llhttp: 6.0.4<br>openssl: 1.1.1n+quic<br>cldr: 40.0<br>icu: 70.1<br>tz: 2021a3<br>unicode: 14.0<br>ngtcp2: 0.1.0-DEV<br>nghttp3: 0.1.0-DEV<br></code></pre></td></tr></table></figure>
+
+<h3 id="初始化博客项目"><a href="#初始化博客项目" class="headerlink" title="初始化博客项目"></a>初始化博客项目</h3><p>首先用 Hexo 新建一个博客项目：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">创建项目目录并 <span class="hljs-built_in">cd</span> 进去</span><br>cd 项目目录<br><br>hexo init hexo-blog<br>cd hexo-blog<br>npm install<br></code></pre></td></tr></table></figure>
+
+<p>然后启动 hexo 博客的本地服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo g<br>hexo server<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">应该输出类似于：</span><br>INFO  Validating config<br>INFO  Start processing<br>INFO  Files loaded in 148 ms<br>INFO  0 files generated in 15 ms<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.<br></code></pre></td></tr></table></figure>
+
+<p>查看本地部署的博客：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">http://localhost:4000/<br></code></pre></td></tr></table></figure>
+
+<p>终于看到我们的博客长什么样子了：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/LNmaLQ"><img src="https://s1.ax1x.com/2022/04/17/LNmaLQ.jpg" srcset="/img/loading.gif" lazyload alt="LNmaLQ.jpg"></a></p>
+<h4 id="可选：提升颜值，更换界面风格"><a href="#可选：提升颜值，更换界面风格" class="headerlink" title="可选：提升颜值，更换界面风格"></a>可选：提升颜值，更换界面风格</h4><p>在看脸的时代，颜值很重要哇，hexo 提供了几百种界面风格供我们自己选择，<a target="_blank" rel="noopener" href="https://hexo.io/themes/">网页链接：选择自己喜欢的界面风格</a>：<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LNmRL4"><img src="https://s1.ax1x.com/2022/04/17/LNmRL4.jpg" srcset="/img/loading.gif" lazyload alt="LNmRL4.jpg"></a></p>
+<p>假设我们最终选择使用 Lap 风格，如下，非常漂亮：<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LNMHNd"><img src="https://s1.ax1x.com/2022/04/17/LNMHNd.jpg" srcset="/img/loading.gif" lazyload alt="LNMHNd.jpg"></a></p>
+<p>通过下面 3 步将博客风格改为 Lap:</p>
+<ol>
+<li>在界面风格选择界面(<a target="_blank" rel="noopener" href="https://hexo.io/themes/)%EF%BC%8C%E7%82%B9&quot;Lap&quot;%EF%BC%8C%E8%BF%9B%E5%85%A5">https://hexo.io/themes/)，点&quot;Lap&quot;，进入</a> github，download as zip，将 zip 解压然后重命名为 Lap;</li>
+<li>打开 hexo-blog 根目录下面的 _coinfig.yml, 找到 theme 属性，改为 Lap，如下：<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LNw8Fx"><img src="https://s1.ax1x.com/2022/04/17/LNw8Fx.jpg" srcset="/img/loading.gif" lazyload alt="LNw8Fx.jpg"></a><br>记得用 ctrl+s 保存更改。</li>
+<li>重新启动 hexo 服务：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">如果服务已经启动，先 ctrl + c 停止服务</span><br>hexo g -d <br>hexo s<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="创作文章"><a href="#创作文章" class="headerlink" title="创作文章"></a>创作文章</h3><p>这里我们开始正式地创作文章了，当然了，我们用 markdown 来写文章。<br>假设我们的第一篇文章就叫做 “fisrt_github_paper”：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo new post fisrt_github_paper<br></code></pre></td></tr></table></figure>
+<p>这个命令会在 hexo-blog\source_posts 下面创建一个 fisrt_github_paper.md 新文件，我们在里面创作文章。</p>
+<h2 id="进阶功能：统计文章阅读量，访客量，开启留言评论"><a href="#进阶功能：统计文章阅读量，访客量，开启留言评论" class="headerlink" title="进阶功能：统计文章阅读量，访客量，开启留言评论"></a>进阶功能：统计文章阅读量，访客量，开启留言评论</h2><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>
+<li>csdn：<a target="_blank" rel="noopener" href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a></li>
+</ol>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/04/17/%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84github%E5%8D%9A%E5%AE%A2/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">搭建我的github博客</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/04/01/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
